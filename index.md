@@ -1,7 +1,7 @@
 ## Welcome to Pengfei's blog
 
-This is my first blog ues GitHub Pages. I want to record something on this blog.
+This is my blog uesd to record and share something.
 
-My name: Pengfei Zheng
-Country: China
-e-mail:  pengfei_zheng@qq.com
+My name: Pengfei Zheng  
+Country: China  
+E-mail:  pengfei_zheng@qq.com
