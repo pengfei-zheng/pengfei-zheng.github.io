@@ -280,3 +280,75 @@ defaults:
       share: true
       related: true
       show_date: true
+  # _show-code
+  - scope:
+      path: ""
+      type: show-code
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      show_date: true
+  # _cheap-talk
+  - scope:
+      path: ""
+      type: cheap-talk
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      show_date: true
+  # _book
+  - scope:
+      path: ""
+      type: book
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      show_date: true
+  # _notebook
+  - scope:
+      path: ""
+      type: notebook
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      show_date: true
+  # _tool-site
+  - scope:
+      path: ""
+      type: tool-site
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      show_date: true
+  # _about
+  - scope:
+      path: ""
+      type: tool-site
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      show_date: true

@@ -1,20 +1,20 @@
 # main links
 main:
   - title: "Show-code"
-    url: /original
+    url: /show-code
     description: "Useful or important things I summarized."
   - title: "Cheap-talk"
-    url: /think
+    url: /cheap-talk
     description: "Write down my thought"
   - title: "Book"
-    url: /book/
+    url: /book
     description: "Share good books."
   - title: "Notebook"
-    url: /notebook/
+    url: /notebook
     description: "Record something to prevent forgetting"
   - title: "Tools&Sites"
-    url: /tools_sites/
+    url: /tool-site
     description: "List, share and introduce awesome tools and sites"
   - title: "About"
-    url: /cv/
+    url: /about
     description: "About Pengfei"
