@@ -1,6 +1,6 @@
 ---
 permalink: /tool-site
-category: tool-site
+category: Tool-site
 layout: category-posts
 author_profile: true
 ---

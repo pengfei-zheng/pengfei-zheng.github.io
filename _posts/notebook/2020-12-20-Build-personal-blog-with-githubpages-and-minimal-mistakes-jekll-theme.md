@@ -1,7 +1,8 @@
 ---
 categories: Notebook
+layout: single
+classes: wide
 title: Build personal blog with Github Pages and minimal-mistakes-jekll theme
-toc: true
 ---
 
 # !!!Usage limits of GitHub Pages
@@ -20,9 +21,10 @@ GitHub Pages sites are subject to the following usage limits:
 
 # 1.Create a Github Pages repository.
 
-##### Offilal guide: <https://pages.github.com>
+## 1.1.Offilal guide
+<https://pages.github.com>
 
-## 1.1.Create a repository.
+## 1.2.Create a repository.
 
 Head over to GitHub(<https://github.com/>) and create a new repository named username.github.io, where username is your username (or organization name) on GitHub.
 
@@ -32,7 +34,7 @@ It's unnecessary to configure other options.
 
 ![CreateRepository](https://pengfei-zheng.github.io/assets/images/notebook/CreateRepository.png)
 
-## 1.2.Clone the repository to local.
+## 1.3.Clone the repository to local.
 
 # 2.Download and use minimal-mistakes jekll theme.
 

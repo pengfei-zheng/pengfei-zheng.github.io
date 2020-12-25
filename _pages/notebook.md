@@ -1,6 +1,6 @@
 ---
 permalink: /notebook
-category: notebook
+category: Notebook
 layout: category-posts
 author_profile: true
 ---
