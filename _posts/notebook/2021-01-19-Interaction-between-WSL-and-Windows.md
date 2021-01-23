@@ -7,9 +7,56 @@ title: Interaction between WSL and Windows
 
 # 1.How to
 
-- Offical How-to:
+- Offical How-to:  
+<https://docs.microsoft.com/en-us/windows/wsl/interop>  
 
-<https://docs.microsoft.com/en-us/windows/wsl/interop>
+
+- Several ways to use or start windows application in WSL command line:  
+Reference: <https://www.cnblogs.com/mushroom/p/8969338.html>  
+
+<1> Use `application-name.exe` directly. `.exe` is necessary.  
+Note: Please ensure that the installation path of application is in the Environment Variable.  
+If don't want to add .exe and use the command like Linux, you can set alias in .bashrc or .zshrc. For example, `alias mspaint=mspaint.exe`. Or copy the `application-name.exe` and paste it into the same directory, then rename the pasted one as `application-name`.
+
+<2> Let cmd.exe or powershell.exe to take over the command. Just using `application-name` is OK.  
+Note: Please ensure that the installation path of application is in the Environment Variable.  
+`command_not_found_handle` is function of bash 4.0+. This function will be called if the command is not found. Use cmd.exe or powershell.exe to run the command that is not found by bash.  
+
+Add the following code into .bashrc(cmd.exe can be replaced with powershell.exe):  
+```
+command_not_found_handle() {
+    if cmd.exe /c "(where $1 || (help $1 |findstr /V Try)) >nul 2>nul && ($* || exit 0)"; then
+        return $?
+    else
+        if [ -x /usr/lib/command-not-found ]; then
+           /usr/lib/command-not-found -- "$1"
+           return $?
+        elif [ -x /usr/share/command-not-found/command-not-found ]; then
+           /usr/share/command-not-found/command-not-found -- "$1"
+           return $?
+        else
+           printf "%s: command not found\n" "$1" >&2
+           return 127
+        fi
+    fi
+}
+```
+
+Or add the following code into .zshrc if you use zsh:  
+```
+command_not_found_handler() {
+    if cmd.exe /c "(where $1 || (help $1 |findstr /V Try)) >nul 2>nul && ($* || exit 0)"; then
+        return $?
+    else
+        [[ -x /usr/lib/command-not-found ]] || return 1
+        /usr/lib/command-not-found --no-failure-msg -- ${1+"$1"} && :
+    fi
+}
+```
+
+<3> Link the application of Host to WSL.  
+For example, `ln -sf /mnt/c/Program\ Files/application-name.exe /usr/bin/application-name`  
+
 
 # 2.WSL+Windows Terminal+Vim
 
