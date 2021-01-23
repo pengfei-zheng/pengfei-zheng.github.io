@@ -28,11 +28,12 @@ title: Windows usage
 
 
 # 2. What can input in Run(Win+R) and address bar of explorer:  
-| Input             | Example                                                                  |
-| ---               | ---                                                                      |
-| Application       | calc, mip, regedit, cobtrol, other exe in PATH of Environment Varaiable. |
-| Path of directory | `C:\Users\`, `.`(Input `.` in Run, go to `C:\Users\username\`)           |
-| Url               | <https://pengfei-zheng.github.io/>                                       |
+
+| Input             | Example                                                                   |
+| ---               | ---                                                                       |
+| Application       | `calc`, `mip`, `regedit`, `control`, exe in PATH of Environment Varaiable |
+| Path of directory | `C:\Users\`, `.`(Input `.` in Run, go to `C:\Users\username\`)            |
+| Url               | <https://pengfei-zheng.github.io/>                                        |
 
 `explorer ms-screenclip:` - Used to open snipping tool, same as `Win+Shift+S`. `:` is necessary.
 
