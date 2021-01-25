@@ -25,6 +25,7 @@ title: Windows usage
 | Win+Q/S          | Cortana search box                                        |
 | Win+R            | Run                                                       |
 | Win+V            | Open clippboard history                                   |
+| Win+X            | Windows Mobility Center                                   |
 
 
 # 2. What can input in Run(Win+R) and address bar of explorer:  
