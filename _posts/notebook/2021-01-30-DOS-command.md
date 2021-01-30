@@ -5,8 +5,8 @@ classes: wide
 title: DOS command
 ---
 
-Type the following code in cmd.exe, the command list will be oupt put to a txt file named "dos_command".  
-`help >dos_command.txt
+Type the following code in cmd.exe, the command list will be written into a txt file named "dos_command".  
+`help >dos_command.txt`
 
 For more information on a specific command, type HELP command-name
 
