@@ -88,7 +88,7 @@ endif
 ![CopyHitory](https://pengfei-zheng.github.io/assets/images/notebook/vim-uses-clipboard-of-windows.png)  
 (3)The shortcut of vim's block selection will be changed as "ctrl+alt+v" in windows terminal by default.  
 
-# 3.Convert the file path to let the exe of windows to open the file normally in WSL's command line  
+# 3.Convert the Linux file path to Windows file path to ensure the exe to open the file normally in WSL's command line  
 ```shell
 #!/bin/bash
 wslpath=$1
@@ -130,4 +130,17 @@ then
   
   echo $filepath
 fi
+```  
+
+# 4.Convert the Windows file path to Linux file path  
+
+```shell
+#!/bin/bash
+windows_path=$1
+mount="/mnt/"
+delete_colon=${windows_path/:/} 
+backslash=${delete_colon//\\//}
+lower_disk=${backslash,}
+linux_path=$mount$lower_disk
+echo $linux_path
 ```
