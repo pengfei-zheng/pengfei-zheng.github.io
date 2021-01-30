@@ -27,6 +27,8 @@ title: Windows usage
 | Win+V            | Open clippboard history                                   |
 | Win+X            | Windows Mobility Center                                   |
 
+You can find the complete shortcut list at Microsoft offical site:  
+<https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec>
 
 # 2. What can input in Run(Win+R) and address bar of explorer:  
 
