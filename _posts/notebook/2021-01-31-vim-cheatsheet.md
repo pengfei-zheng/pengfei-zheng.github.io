@@ -55,6 +55,54 @@ p: paragrph
 
 ![](https://pengfei-zheng.github.io/assets/images/notebook/vim-cheat-sheet/A_complete_graphical_cheat_sheet_1.gif)  
 ![](https://pengfei-zheng.github.io/assets/images/notebook/vim-cheat-sheet/A_complete_graphical_cheat_sheet_2.gif)  
+# 10.Others  
+
+input unicode:`ctrl+v u unicode`. example:`ctrl+v u 2190` = `←`   
+
+solve autoindent issue during paste several line: entry `:set paste` mode and then paste, entry `:set nopaste` to quit paste mode  
+
+upper/lower case: `gu/gU+scope($,G,w,0,...)` or visual mode + u/U  
+Change between lower and upper case: `~`
+
+`Ctrl+B/F` = scroll up/down page
+
+`ZZ`: quit and save  
+`ZQ`: quit and don't save  
+`:x`: quit and save  
+
+`n + i + x + ESC` :`i`nsert `n` times of `x`  
+quit insert mode: ESC or `Ctrl+[`  
+delete and enter insert mode: `c + scope(w,$,G,b,...)`  
+delete entir row and enter insert mode: `cc/S`  
+delete one character and enter insert mode: `s`  
+
+`:r!date`: Insert current date and time at cursor position  
+`:r!command`: Insert the output of shell command  
+
+`%`: move between {} [] ()  
+
+find a word: `/` `*` `#`  
+
+`:set ignorecase smartcase`  
+| Search  | Result                                         |
+| ---     | ---                                            |
+| /WORD   | WORD                                           |
+| /Word   | Word                                           |
+| /WoRd   | WoRd                                           |
+| /word   | word,Word,WORD,WoRd....                        |
+| /word\C | word                     (case sensitive)   |
+| /word\c | word,Word,WORD,WoRd....  (case insensitive) |
+
+`:%s/foo\C/bar/g`  
+Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.  
+
+`:%s#foo\C#bar#g`  
+This is can be used to repalce URL.  
+
+Redo: `.` or `Ctrl+R`  
+
+indent in visual mode:  
+`>` or `<`  
 
 # Reference:
 

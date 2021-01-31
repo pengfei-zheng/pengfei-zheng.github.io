@@ -54,8 +54,8 @@ Emphasize hello: `ysiw<em>`
 
     <em>Hello</em> world!
 
-Finally, let's try out visual mode. Press a capital V (for linewise
-visual mode) followed by `S<p class="important">`.
+Finally, let's try out visual mode. (In visual mode, a simple "S" with an argument wraps the selection.)
+Press a capital V (for linewise visual mode) followed by `S<p class="important">`.
 
     <p class="important">
       <em>Hello</em> world!
