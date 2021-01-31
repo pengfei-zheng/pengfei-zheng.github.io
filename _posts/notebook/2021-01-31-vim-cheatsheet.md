@@ -49,7 +49,7 @@ w: word
 s: sentence  
 p: paragrph  
 
-![](https://pengfei-zheng.github.io/assets/images/notebook/vim-cheat-sheet/8-text-objects.gif)  
+![](https://pengfei-zheng.github.io/assets/images/notebook/vim-cheat-sheet/8-text-objects.png)  
 
 # 9.Complete cheat sheet  
 
