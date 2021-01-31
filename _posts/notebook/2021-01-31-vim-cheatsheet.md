@@ -84,12 +84,12 @@ delete one character and enter insert mode: `s`
 find a word: `/` `*` `#`  
 
 `:set ignorecase smartcase`  
-| Search  | Result                                         |
-| ---     | ---                                            |
-| /WORD   | WORD                                           |
-| /Word   | Word                                           |
-| /WoRd   | WoRd                                           |
-| /word   | word,Word,WORD,WoRd....                        |
+| Search  | Result                                      |
+| ---     | ---                                         |
+| /WORD   | WORD                                        |
+| /Word   | Word                                        |
+| /WoRd   | WoRd                                        |
+| /word   | word,Word,WORD,WoRd....                     |
 | /word\C | word                     (case sensitive)   |
 | /word\c | word,Word,WORD,WoRd....  (case insensitive) |
 
