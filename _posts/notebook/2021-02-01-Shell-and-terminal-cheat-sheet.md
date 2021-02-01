@@ -2,15 +2,14 @@
 categories: Notebook
 layout: single
 classes: wide
-title: Shell and Terminal Cheat Sheet
+title: Shell and terminal cheat sheet
 ---
 
 # 0.What is shell and terminal?
 
 In unix terminology,  
 
- - terminal = tty = text input/output environment. For example, `Windows Terminal`, `iTerm2`  
- - console = physical terminal  
+ - terminal = an interface in which you can type and execute text-based commands. For example, `Windows Terminal`, `iTerm2`  
  - shell = command line interpreter. For example, `bash`, `zsh` and `fish`.  
 
 # 1.Move cusor  
